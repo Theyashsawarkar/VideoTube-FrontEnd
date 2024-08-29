@@ -1,19 +1,15 @@
 import React from "react";
-import { IoLogoYoutube } from "react-icons/io";
 import { Link } from "react-router-dom";
 
-function Logo({ size = "30" }) {
-    return (
-        <>
-            <Link to={'/'} className="flex gap-2 items-center">
-                <IoLogoYoutube
-                    size={size}
-                    color="#A855F7"
-                />
-                <span className="font-bold text-white">YOUTUBE</span>
-            </Link>
-        </>
-    );
+function Logo() {
+  return (
+    <>
+      <Link to={'/'} className="flex gap-2 items-center">
+        <img width="64" height="64" src="https://img.icons8.com/nolan/64/circled-play.png" alt="circled-play" />
+        <span className="font-bold text-white">VideoTube</span>
+      </Link>
+    </>
+  );
 }
 
 export default Logo;
